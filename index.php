@@ -1,3 +1,3 @@
 <?php
-echo "rejestracja i logowani";
+echo "rejestracja i logowania";
 ?>
