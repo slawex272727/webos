@@ -2,6 +2,8 @@
 
 try
 {
+    require_once "core/common.inc.php";
+    
     require_once "core/head.php";
     require_once "core/generaction_window.php";
     
@@ -23,7 +25,7 @@ try
 }
 catch (Exception $e)
 {
-   print "FATAL ERROR: {$e->getMessage()}";
+   print "FATAL ERROR: {$e}";
 }
 
 ?>
