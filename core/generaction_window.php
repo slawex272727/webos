@@ -1,11 +1,12 @@
 <?php
 require_once("config.php");
 db_connect() ;
+
 class GeneratorFieldsIcons
 {
     public function toStringFirstWindow()
     {
-       $content = "";
+        $content = "";
         $iconsForFields = $this->getIconsForFieldsFromDatabase();
        
         $content .= "<div id='window_for_ikons'>";
@@ -17,11 +18,8 @@ class GeneratorFieldsIcons
                 $fid = ($y * $this->width) + $x + $y;
                
                 if (isset($iconsForFields[$fid]))
-  			
                     $icon = $iconsForFields[$fid];
-				
                 else
-				
                     $icon = "BRAK";
                 
                 $content .= "<div id='{$fid}' class='icon'>{$icon}</div>";
@@ -35,21 +33,20 @@ class GeneratorFieldsIcons
  
     private function getIconsForFieldsFromDatabase($table = "ikon")
     {
-         $fields = array ();
+        $fields = array ();
          
-         $query = "SELECT fid, icon FROM {$table}";
-         $result = mysql_query($query);
-         if (mysql_errno() != 0)
-		{
-			 print mysql_error();
-			 exit;
-		}
+        $query = "SELECT fid, icon FROM {$table}";
+        $result = mysql_query($query);
+        
+        if (mysql_errno() != 0)
+            throw new Exception(mysql_error());
 
-         while ($row = mysql_fetch_object($result))
+        while ($row = mysql_fetch_object($result))
             $fields[$row->fid] = $row->icon;
          
-         return $fields;
+        return $fields;
     }
+    
 	private $width = 10;
     private $height = 8;
 }
