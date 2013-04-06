@@ -9,6 +9,18 @@ try
     
     $content = "";
     
+    $db = new Database("localhost", "root", "", "zlecenie");
+    
+    $select = $db->select("ikon", "i")
+                 ->fields(array(
+                             "id",
+                             "fid",
+                             "icon" => "ic")
+                          );
+    
+    debug ($select->toString());
+    debug ($select->exec());
+    
     $generatorFieldsIcons = new GeneratorFieldsIcons;
     
     $content .= getHtmlHeader().
