@@ -24,6 +24,12 @@ class Database
         $this->mysqli->close();
     }
     
+    /**
+     * Przygotowuje zapytanie SELECT
+     * $table - Nazwa tabeli
+     * $alias *- Alias dla tabeli
+     * return: Obiekt DatabaseQuerySelect
+     */
     public function select($table, $alias = null)
     {
         return new DatabaseQuerySelect($table, $alias, $this);

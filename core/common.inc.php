@@ -33,6 +33,11 @@ function __autoload($class)
     throw new Exception("Class {$class} was not found!");
 }
 
+/**
+ * Pobiera listę katalogów
+ * $dir - Katalog
+ * return: Jednowymiarowa tablica nazw katalogów
+ */
 function getDirsListInDir($dir)
 {
     $files = array($dir);

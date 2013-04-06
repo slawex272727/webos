@@ -2,6 +2,11 @@
 
 class DatabaseQuerySelect extends DatabaseQuery
 {
+    /**
+     * $table - Nazwa tabeli
+     * $alias *- Alias tabeli
+     * $database *- Wskaźnik na bazę danych klasy Database
+     */
 	public function __construct($table, $alias = null, Database $database = null)
 	{
 		parent::__construct("SELECT", $database);
@@ -10,6 +15,12 @@ class DatabaseQuerySelect extends DatabaseQuery
 		$this->alias = $alias;
 	}
 
+	/**
+	 * Ustawia kolumny do pobrania
+	 * $fields - Tablica nazwa kolumn.
+	 *           Można użyć tablicy asocjacyjnej, wtedy klucz będzie nazwą kolumny a wartość aliasem.
+	 * return: $this  
+	 */
 	public function fields(array $fileds)
 	{
 		$this->fields = $fileds;
@@ -17,11 +28,17 @@ class DatabaseQuerySelect extends DatabaseQuery
 		return $this;
 	}
 
+	/**
+	 * return: Wygenerowane zapytanie SQL
+	 */
 	public function toString()
 	{
 	    return "{$this->instruction} {$this->toStringFields()} FROM {$this->toStringTable()}";
 	}
 
+	/**
+	 * return: Wygenerowana lista kolumn do zapytania SQL
+	 */
 	private function toStringFields()
 	{
 	    if ($this->fields === null)
@@ -43,6 +60,9 @@ class DatabaseQuerySelect extends DatabaseQuery
 	    return $str;
 	}
 
+	/**
+	 * return: Nazwa tabeli do zapytania SQL 
+	 */
 	private function toStringTable()
 	{
 	    if ($this->alias !== null)

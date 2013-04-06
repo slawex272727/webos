@@ -2,6 +2,10 @@
 
 class DatabaseQuery
 {
+    /**
+     * $instruction - Nazwa instrukcji SQL
+     * $database *- Wskaźnik na bazę danych klasy Database
+     */
 	public function __construct($instruction, Database $database = null)
 	{
 		$this->instruction = $instruction;
