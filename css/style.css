@@ -2,8 +2,8 @@ html, body
 {
     margin: 0px;
     padding: 0px;
-    width:100%;
-    height:100%;
+	width:100%;
+	height:100%;
 	
 }
 #contenair
@@ -35,7 +35,12 @@ html, body
 	z-index:1;
 	width:100%;
 	height:95%;
-	background-color:lightblue;
+	background:url('../images/deflaut_desktop.jpg'); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 }
 #left_menu
 {
@@ -47,9 +52,9 @@ html, body
 	height:100%;
 	border:none;
 	background-color:yellow;
-	filter:alpha(opacity=50);
-	opacity: 0.5;
-	-moz-opacity:0.5;
+	filter:alpha(opacity=10);
+	opacity: 0.1;
+	-moz-opacity:0.1;
 }
 #window
 {
@@ -70,5 +75,6 @@ html, body
 	background-color: lightblue;
 	float: left;
 }
+
 
 
