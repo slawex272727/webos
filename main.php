@@ -12,11 +12,11 @@ try
     $db = new Database("localhost", "root", "", "zlecenie");
     
     $select = $db->select("ikon", "i")
-                 ->fields(array(
-                             "id",
-                             "fid",
-                             "icon" => "ic")
-                          );
+                 ->fields(array("id", "fid", "icon"))
+                 ->where("icon", "computer")
+                 ->w_or("id", "1")
+                 ->w_and("fid", 1);
+                 
     
     debug ($select->toString());
     debug ($select->exec());

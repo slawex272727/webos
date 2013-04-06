@@ -16,7 +16,7 @@ class Database
         $this->mysqli = new mysqli($host, $user, $password, $database);
         
         if ($this->mysqli->connect_error)
-        	throw new Exception($this->mysqli->connect_error);
+            throw new Exception($this->mysqli->connect_error);
     }
     
     public function __destruct()
@@ -46,7 +46,7 @@ class Database
         $result = $this->mysqli->query($query);
         
         if ($this->mysqli->errno)
-        	throw new Exception($this->mysqli->error);
+            throw new Exception($this->mysqli->error);
         
         $table = array();
         while ($row = $result->fetch_object())
