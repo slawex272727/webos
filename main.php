@@ -2,8 +2,6 @@
 
 try
 {
-    require_once "core/common.inc.php";
-    
     require_once "core/head.php";
     require_once "core/generaction_window.php";
     
@@ -13,11 +11,15 @@ try
     
     $content .= getHtmlHeader().
                     "<body>".
-                        $generatorFieldsIcons->toStringFirstWindow().
-                        "<div id='menu'>".
-                            "<div id='start'>".
-                            "</div>".	
-                        "</div>".
+    					"<div id='contenair'>".
+							"<div id='top_menu'></div>".
+							"<div id='FullWindow'>".
+								"<div id='left_menu'></div>".							
+									"<div id='window'>".
+										$generatorFieldsIcons->toStringFirstWindow().
+									"</div>".														
+							"</div>".	
+						"</div>".
                     "</body>".
                 "</html>";
     
@@ -25,7 +27,8 @@ try
 }
 catch (Exception $e)
 {
-   print "FATAL ERROR: {$e}";
+   print "FATAL ERROR: {$e->getMessage()}";
 }
 
 ?>
+
