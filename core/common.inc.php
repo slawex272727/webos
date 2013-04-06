@@ -12,23 +12,57 @@ set_error_handler("exception_error_handler");
 /**
  * Automatycznie importuje potrzebną klasę
  */
-function __autoload($className)
+function __autoload($class)
 {
-    $pathList = array(
-    		    "core/{$class}.php",
-    		    "core/{$class}.class.php"
-    		);
-    
-    foreach ($pathList as $path)
+    foreach (getDirsListInDir("core") as $dir)
     {
-    	if(file_exists($path))
-    	{
-    		require_once $path;    
-    		return true;
-    	}
+        $pathList = array();
+        $pathList[] = "{$dir}/{$class}.php";
+        $pathList[] = "{$dir}/{$class}.class.php";
+        
+        foreach ($pathList as $path)
+        {
+            if(file_exists($path))
+            {
+                require_once $path;
+                return true;
+            }
+        }
     }
     
     throw new Exception("Class {$class} was not found!");
+}
+
+function getDirsListInDir($dir)
+{
+    $files = array($dir);
+    
+    foreach (new DirectoryIterator($dir) as $file)
+    {
+        if($file->isDot())
+            continue;
+        
+        if ($file->isDir())
+        {
+            $dirsList = getDirsListInDir($file->getPathname());
+            
+            foreach ($dirsList as $dir)
+                $files[] = $dir;
+        }
+    }
+
+    return $files;
+}
+
+/**
+ * Wyświela wartość zmiennej na ekran
+ * $var - Zmienna
+ */
+function debug($var)
+{
+    print "<pre>".
+              htmlspecialchars(print_r($var, true)).
+          "</pre>";
 }
 
 ?>
