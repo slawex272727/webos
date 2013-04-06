@@ -1,5 +1,6 @@
 fuel/app/logs/*/*/*
 fuel/app/cache/*/*
+*~
 .settings
 .project
 .buildpath
