@@ -25,7 +25,8 @@ try
 }
 catch (Exception $e)
 {
-   print "FATAL ERROR: {$e}";
+   print "FATAL ERROR: <br>".
+         "<pre>{$e}</pre>";
 }
 
 ?>
