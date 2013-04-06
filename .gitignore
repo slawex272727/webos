@@ -3,3 +3,4 @@ fuel/app/cache/*/*
 .settings
 .project
 .buildpath
+*Thumbs.db
