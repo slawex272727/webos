@@ -11,13 +11,13 @@ try
     
     $content .= getHtmlHeader().
                     "<body>".
-    					"<div id='contenair'>".
+						"<div id='contenair'>".
 							"<div id='top_menu'></div>".
 							"<div id='FullWindow'>".
 								"<div id='left_menu'></div>".							
-									"<div id='window'>".
-										$generatorFieldsIcons->toStringFirstWindow().
-									"</div>".														
+									//"<div id='window'>".
+									//	$generatorFieldsIcons->toStringFirstWindow().
+									//"</div>".														
 							"</div>".	
 						"</div>".
                     "</body>".
@@ -31,4 +31,3 @@ catch (Exception $e)
 }
 
 ?>
-
