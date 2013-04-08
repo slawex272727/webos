@@ -25,7 +25,7 @@ html, body
 	width:100%;
 	height:3%;
 	border:none;
-	background-color:green;
+	background-color:#56534a;
 }
 #FullWindow
 {
@@ -48,7 +48,7 @@ html, body
 	left:0px;
 	top:0px;
 	z-index:2;
-	width:10%;
+	width:7%;
 	height:100%;
 	border:none;
 	background-color:yellow;
@@ -62,7 +62,7 @@ html, body
 	left:10%;
 	top:0px;
 	z-index:2;
-	width:90%;
+	width:93%;
 	height:100%;
 	border:none;
 	background-color:yellow;
@@ -75,4 +75,46 @@ html, body
 	background-color: lightblue;
 	float: left;
 }
+#ubunut_desktop
+{
+	height:100%;
+	width:14%;
+	float:left;
+	background-color: #56534a;
+}
 
+#emtpy_gnome_menu
+{
+	height:100%;
+	width:74%;
+	float:left;
+	background-color: yellow;
+}
+#wifi_menu
+{
+	height:100%;
+	width:2%;
+	float:left;
+	background-color:orange;
+}
+#sound_menu
+{
+	height:100%;
+	width:2%;
+	float:left;
+	background-color:yellow;
+}
+#time_menu
+{
+	height:100%;
+	width:6%;
+	float:left;
+	background-color:orange;
+}
+#con_menu
+{
+	height:100%;
+	width:2%;
+	float:left;
+	background-color:yellow;
+}
