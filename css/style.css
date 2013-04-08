@@ -118,3 +118,10 @@ html, body
 	float:left;
 	background-color:yellow;
 }
+#menu_setting
+{
+	background-color:silver;
+	float:right;
+	width:20%;
+}
+  
