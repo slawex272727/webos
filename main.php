@@ -1,9 +1,10 @@
+<html>
+
+
 <?php
 
 try
 {
-    require_once "core/common.inc.php";
-    
     require_once "core/head.php";
     require_once "core/generaction_window.php";
     
@@ -14,7 +15,14 @@ try
     $content .= getHtmlHeader().
                     "<body>".
 						"<div id='contenair'>".
-							"<div id='top_menu'></div>".
+							"<div id='top_menu'>".
+								"<div id='ubunut_desktop'>UBUNTU DESKTOP</div>".
+								"<div id='emtpy_gnome_menu'></div>".			
+								"<div id='wifi_menu'></div>".			
+								"<div id='sound_menu'></div>".
+								"<div id='time_menu'>12:04PM</div>".	
+								"<div id='con_menu'></div>".								
+							"</div>".
 							"<div id='FullWindow'>".
 								"<div id='left_menu'></div>".							
 									//"<div id='window'>".
