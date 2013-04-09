@@ -156,3 +156,41 @@ html, body
 	opacity: 0.5;
 	-moz-opacity:0.5;
 }
+#left_start_window
+{
+	position:absolute;
+	left:0%;
+	top:3%;
+	z-index:2;
+	width:40%;
+	height:97%;
+	border:none;
+
+}
+#right_start_window
+{
+	position:absolute;
+	left:40%;
+	top:3%;
+	z-index:2;
+	width:60%;
+	height:97%;
+	border:none;
+}
+#login_panel
+{
+ 	position:absolute;
+	left:10%;
+	top:30%;
+	z-index:4;
+	width:70%;
+	height:30%;
+	border:none;
+	background-color:lightblue;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	-moz-opacity:0.5;
+}
