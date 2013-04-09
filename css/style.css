@@ -120,8 +120,12 @@ html, body
 }
 #menu_setting
 {
-	background-color:silver;
-	float:right;
-	width:20%;
+	position:absolute;
+	top:0px;
+	z-index:6;
+	width:40%;
+	height:100%;
+	border:none;
+	background-color:yellow;
 }
   
