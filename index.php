@@ -13,9 +13,12 @@ try
     $content .= getHtmlHeader().
                     "<body>".
 					"<div id='start_window'>".
-						"<div id='top_start_menu'>".
-						
-						"</div>".
+						"<div id='top_start_menu'></div>".
+							"<div id='left_start_window'>".
+								"<div id='login_panel'>".
+								"</div>".
+							"</div>".			
+							"<div id='right_start_window'></div>".							
 					"</div>".
                     "</body>".
                 "</html>";
