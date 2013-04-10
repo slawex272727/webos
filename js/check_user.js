@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $("#button-logIn").click(function() 
 {
       var login=$('#login').val();
@@ -31,3 +32,4 @@ function trim(str)
      var str=str.replace(/^\s+|\s+$/,'');
      return str;
 }
+});

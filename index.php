@@ -18,7 +18,7 @@ try
 						"<div id='top_start_menu'></div>".
 							"<div id='left_start_window'>".
 								"<div id='login_panel'>".
-								"<form action='core/CheckUser.php' method='POST'>".
+								"<form  method='POST'>".
 									"<div id='errorMessage'></div>".
 										"<div>".
 											"<input type='text' name='login' id='login'>".
