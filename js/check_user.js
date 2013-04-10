@@ -17,7 +17,7 @@ function CheckUser()
 		
         if(result=='correct')
 		{
-            window.location='index.php';
+            window.location='main.php';
         }
 		else
 		{
@@ -25,4 +25,9 @@ function CheckUser()
         }
       }
   });
+}
+function trim(str)
+{
+     var str=str.replace(/^\s+|\s+$/,'');
+     return str;
 }

@@ -1,6 +1,8 @@
 <?php
-session_start();
-//laczenie z mysqlem
+
+require_once "config.php";
+require_once "session.php";   	
+db_connect() ;
 $message=array();
 if(isset($_POST['login']) && !empty($_POST['login']))
 {

@@ -5,7 +5,9 @@ try
 {
     require_once "core/head.php";
     require_once "core/generaction_window.php";
-    
+    require_once "core/config.php";
+    require_once "core/session.php";   	
+	db_connect() ;
     $content = "";
     
     $generatorFieldsIcons = new GeneratorFieldsIcons;
