@@ -16,6 +16,19 @@ try
 						"<div id='top_start_menu'></div>".
 							"<div id='left_start_window'>".
 								"<div id='login_panel'>".
+								"<form action='core/CheckUser.php' method='POST'>".
+									"<div id='errorMessage'></div>".
+										"<div>".
+											"<input type='text' name='login' id='login'>".
+										"</div>".									
+										"<div>".
+											"<input type='password' name='password' id='password'>".
+										"</div>".	
+										"<div id='button_box'>".
+											"<button type='sumbit' name='submit' class='button' onclick='CheckUser()'>Zaloguj</button>".
+										"</div>".
+										"<div id='chech_user'></div>".										
+								"</form>".
 								"</div>".
 							"</div>".			
 							"<div id='right_start_window'></div>".							
