@@ -27,7 +27,7 @@ try
 											"<input type='password' name='password' id='password'>".
 										"</div>".	
 										"<div id='button_box'>".
-											"<button type='sumbit' name='submit' class='button' onclick='CheckUser()'>Zaloguj</button>".
+											"<button type='sumbit' name='submit' class='button' id='button-logIn'>Zaloguj</button>".
 										"</div>".
 										"<div id='chech_user'></div>".										
 								"</form>".

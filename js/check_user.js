@@ -1,4 +1,4 @@
-function CheckUser()
+$("#button-logIn").click(function() 
 {
       var login=$('#login').val();
       var password=$('#password').val();
@@ -25,7 +25,7 @@ function CheckUser()
         }
       }
   });
-}
+});
 function trim(str)
 {
      var str=str.replace(/^\s+|\s+$/,'');
