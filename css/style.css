@@ -59,22 +59,32 @@ html, body
 #window
 {
 	position:absolute;
-	left:10%;
+	left:7%;
 	top:0px;
 	z-index:2;
 	width:93%;
 	height:100%;
 	border:none;
-	background-color:yellow;
-
 }
-#window_for_ikons div
+.icon
 {
 	position:relative;
-	width: 11.1%;
+	z-index:6;
+	width:10%;
+	height:12.5%;
+	border:none;
 	background-color: lightblue;
 	float: left;
+	padding:0%;
+	text-align:center;
 }
+
+
+
+
+
+
+
 #ubunut_desktop
 {
 	height:100%;
