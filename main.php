@@ -26,9 +26,9 @@ try
 							"</div>".
 							"<div id='FullWindow'>".
 								"<div id='left_menu'></div>".							
-									//"<div id='window'>".
+									"<div id='window'>".
 									//	$generatorFieldsIcons->toStringFirstWindow().
-									//"</div>".														
+									"</div>".														
 							"</div>".	
 						"</div>".
                     "</body>".
