@@ -31,6 +31,7 @@ try
 										"</div>".
 										"<div id='chech_user'></div>".										
 								"</form>".
+								"<a href='core/rejegester.php'>Rejestracja</a>".
 								"</div>".
 							"</div>".			
 							"<div id='right_start_window'></div>".							
