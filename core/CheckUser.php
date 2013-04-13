@@ -1,5 +1,4 @@
 <?php
-
 require_once "config.php";
 require_once "session.php";   	
 db_connect() ;
@@ -41,6 +40,7 @@ else
         $_SESSION['init']=true;
 		$_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
         echo 'correct';
+		header('Location: main.php');
     }
 	else
 	{
