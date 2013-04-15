@@ -65,4 +65,17 @@ function debug($var)
           "</pre>";
 }
 
+/**
+ * Przekierowuje przegladarke na podana strone
+ * $page - Link do strony
+ * $exit *- Jesli true skrypt konczy swoje wykonywanie (domyslnie)
+ */
+function goto($page, $exit = true)
+{
+    header("Location: {$page}");
+    
+    if ($exit)
+        exit;
+}
+
 ?>
